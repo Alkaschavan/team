@@ -11,10 +11,24 @@ body{
 }
 
 .team h2{
-    font-size: 32px;
+    text-align: center;
+    font-size: 2.5rem;
     margin-bottom: 40px;
     color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
 }
+
+h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #00bcd4;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
 
 .team-container{
     display: flex;
